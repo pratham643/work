@@ -1,43 +1,8 @@
+<link rel="stylesheet" href="styles.css">
 <div class="gridview">
     <div class="cellun">1</div>
     <div class="cellun">2</div>
     <div class="cellun">3</div>
     <div class="cellun">4</div>
   </div>
-<style>
-    .gridview {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  border: 1px solid black;
-}
 
-.cellun {
-  border: 1px solid black;
-  padding: 10px;
-}
-
-@media (max-width: 720px) {
-  .gridview {
-    grid-template-columns: repeat(2, 50%);
-  }
-}
-
-@media (max-width: 360px) {
-  .gridview {
-    grid-template-columns: 100%;
-  }
-
-  .cellun:nth-child(2) {
-    grid-row: 2;
-  }
-
-  .cellun:nth-child(3) {
-    grid-row: 3;
-  }
-
-  .cellun:nth-child(4) {
-    grid-row: 4;
-  }
-}
-
-</style>  
